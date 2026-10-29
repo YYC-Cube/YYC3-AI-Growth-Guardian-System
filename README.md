@@ -1,3 +1,13 @@
+<p align="center">
+  <img src="assets/yyc3-family.png" alt="YYC³ Family" width="720">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/YYC3-Family-00d4ff?style=flat-square" alt="YYC3 Family">
+  <img src="https://img.shields.io/github/license/YYC-Cube/YYC3-AI-Growth-Guardian-System?style=flat-square" alt="License">
+  <img src="https://img.shields.io/github/last-commit/YYC-Cube/YYC3-AI-Growth-Guardian-System?style=flat-square" alt="Last Commit">
+</p>
+
 # YYC³ 智能插拔式移动AI系统
 
 <div align="center">
