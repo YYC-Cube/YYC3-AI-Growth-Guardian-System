@@ -1,3 +1,8 @@
+> **⚠️ 本仓库已归档（2026-11-20）**
+>
+> 不再维护，代码只读。唯一现役主线：**[YYC3-Baby-MoYu](https://github.com/YYC-Cube/YYC3-Baby-MoYu)**。
+> 本仓为 Next 14 时期的分叉，多服务端形态（Hono/Express/microservices）未并入主线。
+
 <p align="center">
   <img src="assets/yyc3-family.png" alt="YYC³ Family" width="720">
 </p>
