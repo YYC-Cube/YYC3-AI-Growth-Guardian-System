@@ -1,12 +1,12 @@
-/**
- * YYC³ AI小语智能成长守护系统 - CI/CD 流水线
- * @file ci.yml
- * @description 完整的持续集成和持续部署流水线配置
- * @author YYC³团队 <admin@0379.email>
- * @version 1.1.0
- */
+#
+# * YYC³ AI小语智能成长守护系统 - CI/CD 流水线
+# * @file ci.yml
+# * @description 完整的持续集成和持续部署流水线配置
+# * @author YYC³团队 <admin@0379.email>
+# * @version 1.1.0
+# 
 
-name: YYC� CI/CD Pipeline
+name: YYC³ CI/CD Pipeline
 
 on:
   push:
@@ -19,7 +19,7 @@ env:
   BUN_VERSION: 'latest'
 
 jobs:
-  # �(���
+  # quality-checks 阶段
   quality-checks:
     name: Code Quality Checks
     runs-on: ubuntu-latest
@@ -57,7 +57,7 @@ jobs:
         name: eslint-report
         path: eslint-report.json
 
-  # K�W�
+  # test-suite 阶段
   test-suite:
     name: Test Suite
     runs-on: ubuntu-latest
@@ -98,7 +98,7 @@ jobs:
         flags: unittests
         name: codecov-umbrella
 
-  # �K�
+  # integration-tests 阶段
   integration-tests:
     name: Integration Tests
     runs-on: ubuntu-latest
@@ -161,7 +161,7 @@ jobs:
         DATABASE_URL: postgresql://postgres:test@localhost:5432/yyc3_test
         REDIS_URL: redis://localhost:6379
 
-  # ��K�
+  # build-test 阶段
   build-test:
     name: Build Test
     runs-on: ubuntu-latest
@@ -188,7 +188,7 @@ jobs:
         sleep 10
         curl -f http://localhost:3000 || exit 1
 
-  # '�K�
+  # performance-tests 阶段
   performance-tests:
     name: Performance Tests
     runs-on: ubuntu-latest
@@ -224,7 +224,7 @@ jobs:
         name: performance-results
         path: results.json
 
-  # �r1���
+  # deployment-ready 阶段
   deployment-ready:
     name: Deployment Ready Check
     runs-on: ubuntu-latest
@@ -254,7 +254,7 @@ jobs:
         name: deployment-manifest
         path: deployment.env
 
-  # �
+  # notify 阶段
   notify:
     name: Notify Results
     runs-on: ubuntu-latest
